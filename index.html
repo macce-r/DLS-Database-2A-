@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DLS Trackers (2A)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --notion-text: rgb(55, 53, 47);
+            --notion-text-light: rgba(55, 53, 47, 0.65);
+            --notion-bg-hover: rgba(55, 53, 47, 0.08);
+        }
+
+        body {
+            font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            line-height: 1.5;
+            margin: 0;
+            padding: 3rem max(96px, calc((100% - 900px) / 2));
+            background-color: white;
+            color: var(--notion-text);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 40px;
+            font-weight: 700;
+            margin: 0 0 3rem 0;
+            color: var(--notion-text);
+            padding: 0;
+            line-height: 1.2;
+        }
+
+        .tracker-section {
+            margin-bottom: 4rem;
+        }
+
+        .tracker-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--notion-text);
+            margin-bottom: 1px;
+            padding: 3px 2px;
+            line-height: 1.3;
+        }
+
+        .items-list {
+            margin-top: 2px;
+        }
+
+        .item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 3px 2px;
+            min-height: 27px;
+            margin: 1px 0;
+        }
+
+        .item:hover {
+            background-color: var(--notion-bg-hover);
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .item-name {
+            font-weight: 450;
+            color: var(--notion-text);
+            font-size: 14px;
+            padding: 3px 0;
+        }
+
+        .item-details {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .tag {
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 12px;
+            line-height: 16px;
+            white-space: nowrap;
+            font-weight: 500;
+        }
+
+        .tag-presentation {
+            background-color: rgb(255, 226, 221);
+            color: rgb(193, 47, 47);
+        }
+
+        .tag-espagnol {
+            background-color: rgb(251, 243, 219);
+            color: rgb(147, 75, 0);
+        }
+
+        .tag-svt {
+            background-color: rgb(237, 226, 255);
+            color: rgb(105, 37, 131);
+        }
+
+        .tag-controle {
+            background-color: rgb(221, 235, 255);
+            color: rgb(0, 101, 255);
+        }
+
+        .tag-spc {
+            background-color: rgb(255, 245, 221);
+            color: rgb(200, 100, 0);
+        }
+
+        .tag-examen {
+            background-color: rgb(237, 226, 255);
+            color: rgb(105, 37, 131);
+        }
+
+        .tag-ses {
+            background-color: rgb(219, 255, 226);
+            color: rgb(0, 135, 107);
+        }
+
+        .tag-note {
+            background-color: rgba(227, 226, 224, 0.5);
+            color: rgb(50, 48, 44);
+        }
+
+        .tag-pas-note {
+            background-color: rgb(255, 226, 221);
+            color: rgb(193, 47, 47);
+        }
+
+        .date {
+            color: var(--notion-text-light);
+            font-size: 14px;
+            font-weight: 450;
+        }
+
+        .section-divider {
+            height: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>DLS Trackers (2A)</h1>
+
+        <div class="tracker-section">
+            <div class="tracker-title">
+                Exams Tracker (2A)
+            </div>
+            <div class="items-list">
+                <div class="item">
+                    <div class="item-name">Example #2</div>
+                    <div class="item-details">
+                        <span class="date">Lundi</span>
+                        <span class="date">April 7, 2025</span>
+                        <span class="tag tag-presentation">Présentation</span>
+                        <span class="tag tag-espagnol">Espagnol</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-name">Example #1</div>
+                    <div class="item-details">
+                        <span class="date">Mercredi</span>
+                        <span class="date">April 9, 2025</span>
+                        <span class="tag tag-presentation">Présentation</span>
+                        <span class="tag tag-svt">SVT</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-name">Example #4</div>
+                    <div class="item-details">
+                        <span class="date">Samedi</span>
+                        <span class="date">April 12, 2025</span>
+                        <span class="tag tag-controle">Contrôle</span>
+                        <span class="tag tag-spc">SPC</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-name">Example #3</div>
+                    <div class="item-details">
+                        <span class="date">Lundi</span>
+                        <span class="date">April 14, 2025</span>
+                        <span class="tag tag-examen">Examen</span>
+                        <span class="tag tag-svt">SVT</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-divider"></div>
+
+        <div class="tracker-section">
+            <div class="tracker-title">
+                Assignment Tracker (2A)
+            </div>
+            <div class="items-list">
+                <div class="item">
+                    <div class="item-name">Example #1</div>
+                    <div class="item-details">
+                        <span class="date">Mardi</span>
+                        <span class="date">April 15, 2025</span>
+                        <span class="tag tag-ses">SES</span>
+                        <span class="tag tag-note">Noté</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-name">Example #3</div>
+                    <div class="item-details">
+                        <span class="date">Lundi</span>
+                        <span class="date">April 21, 2025</span>
+                        <span class="tag tag-svt">SVT</span>
+                        <span class="tag tag-note">Noté</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-name">Example #2</div>
+                    <div class="item-details">
+                        <span class="date">Mardi</span>
+                        <span class="date">April 22, 2025</span>
+                        <span class="tag tag-spc">SPC</span>
+                        <span class="tag tag-pas-note">Pas Noté</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-name">Example #4</div>
+                    <div class="item-details">
+                        <span class="date">Mercredi</span>
+                        <span class="date">April 30, 2025</span>
+                        <span class="tag tag-snt">SNT</span>
+                        <span class="tag tag-pas-note">Pas Noté</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
